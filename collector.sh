@@ -1,4 +1,6 @@
 #!/bin/sh
+export server="192.168.86.199"
+export port="2003"
 /jffs/checkConnections.sh &
 /jffs/pingGateway.sh &
 /jffs/pingGoogle.sh &

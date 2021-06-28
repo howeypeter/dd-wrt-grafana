@@ -1,7 +1,5 @@
 #!/bin/sh
 date="$( date +%s )"
-server="192.168.1.54"
-port="2003"
 mem=`cat /proc/meminfo`
 total=`echo "$mem" | grep ^MemTotal | awk '{print $2}'`
 free=`echo "$mem" | grep ^MemFree | awk '{print $2}'`
