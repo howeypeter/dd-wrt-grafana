@@ -1,7 +1,5 @@
 #!/bin/sh
 date="$( date +%s )"
-server="192.168.1.54"
-port="2003"
 load=`cat /proc/loadavg`
 load1=`echo "$load" | awk '{print $1}'`
 load5=`echo "$load" | awk '{print $2}'`

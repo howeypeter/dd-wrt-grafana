@@ -1,7 +1,5 @@
 #!/bin/sh
 date="$( date +%s )"
-server="192.168.1.54"
-port="2003"
 cpu=`cat /proc/stat | head -n1 | sed 's/cpu //'`
 user=`echo $cpu | awk '{print $1}'`
 nice=`echo $cpu | awk '{print $2}'`

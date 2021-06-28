@@ -1,7 +1,5 @@
 #!/bin/sh
 date="$( date +%s )"
-server="192.168.1.54"
-port="2003"
 connections=`cat /proc/net/nf_conntrack`
 tcp=`echo "$connections" | grep ipv4 | grep tcp | wc -l`
 udp=`echo "$connections" | grep ipv4 | grep udp | wc -l`

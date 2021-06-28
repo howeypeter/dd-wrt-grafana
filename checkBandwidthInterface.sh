@@ -1,8 +1,8 @@
 #!/bin/sh
 # Check /sys/class/net/ for iterfaces
 #
-server="192.168.1.54"
-port="2003"
+export server="192.168.86.199"
+export port="2003"
 interface="eth0 eth1 ath0 ath1 br0 tun1"
 while true; do
      date="$( date +%s )"
